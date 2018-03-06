@@ -1,0 +1,97 @@
+{% include 'header.html' %}
+<div class="container container-fluid">
+    <form action="/student/add/" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="account">帳號</label>
+            <input type="text" id="account" name="account" class="form-control" value="" />
+            {% if errors.account %}
+            <div class="alert alert-danger">請輸入帳號</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <label for="password">密碼</label>
+            <input type="password" id="password" name="password" class="form-control" value="" />
+            {% if errors.password %}
+            <div class="alert alert-danger">請輸入密碼</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <label for="name">姓名</label>
+            <input type="text" id="name" name="name" class="form-control" value="" />
+            {% if errors.name %}
+            <div class="alert alert-danger">請輸入姓名</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <label for="gender">姓別</label>
+            <select id="gender" name="gender" class="form-control">
+                <option value="M">男</option>
+                <option value="F">女</option>
+            </select>
+            {% if errors.gender %}
+            <div class="alert alert-danger">請選擇性別</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <label for="born">生日</label>
+            <input type="date" id="born" name="born" class="form-control" value="" />
+            {% if errors.born %}
+            <div class="alert alert-danger">請輸入生日</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <label for="email">信箱</label>
+            <input type="email" id="email" name="email" class="form-control" value="" />
+            {% if errors.email %}
+            <div class="alert alert-danger">請輸入信箱</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <label for="phone">電話</label>
+            <input type="text" id="phone" name="phone" class="form-control" value="" />
+            {% if errors.phone %}
+            <div class="alert alert-danger">請輸入電話</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <label for="country">國家</label>
+            <input type="text" id="country" name="country" class="form-control" value="" />
+            {% if errors.country %}
+            <div class="alert alert-danger">請輸入國家</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <label for="city">縣市</label>
+            <input type="text" id="city" name="city" class="form-control" value="" />
+            {% if errors.city %}
+            <div class="alert alert-danger">請輸入縣市</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <label for="area">區域</label>
+            <input type="text" id="area" name="area" class="form-control" value="" />
+            {% if errors.area %}
+            <div class="alert alert-danger">請輸入區域</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <label for="address">地址</label>
+            <input type="text" id="address" name="address" class="form-control" value="" />
+            {% if errors.address %}
+            <div class="alert alert-danger">請輸入地址</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <label for="zip">郵遞區號</label>
+            <input type="text" id="zip" name="zip" class="form-control" value="" />
+            {% if errors.zip %}
+            <div class="alert alert-danger">請輸入郵遞區號</div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">送出</button>
+        </div>
+    </form>
+</div>
+{% include 'footer.html' %}
