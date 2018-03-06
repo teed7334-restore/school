@@ -1,7 +1,7 @@
 # 學生管理系統
 
 ## 啟動Web Server
-``` python manage.py runserver 0.0.0.0:8000
+``` python manage.py runserver 0.0.0.0:8000 ```
 
 ## 後台進入網址
 http://127.0.0.1:8000
