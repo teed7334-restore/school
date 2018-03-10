@@ -11,6 +11,8 @@ http://127.0.0.1:8000
 
 密碼:admin12345678
 
+## 第零章-如何用Docker啟動Python
+https://goo.gl/4zXjbc
 
 ## 第一章-本地環境建置
 https://goo.gl/sCYWpf
